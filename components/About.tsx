@@ -1,6 +1,8 @@
 import React from 'react';
 import { SKILLS } from '../constants';
 import { Calendar, Mail, MapPin, Briefcase, BriefcaseBusinessIcon, FolderArchiveIcon, FolderDotIcon, FolderOpenDotIcon, FolderOpenIcon } from 'lucide-react';
+import { images } from '@/assets/imageMap';
+
 
 const About: React.FC = () => {
   return (
@@ -63,8 +65,8 @@ const About: React.FC = () => {
           <div className="relative max-w-md mx-auto">
             <div className="absolute inset-0 bg-indigo-600 rounded-3xl rotate-3 opacity-10"></div>
             <img
-              src="./public/images/avt2.jpeg"
-              alt="Portrait of Minh"
+              src={images.avt2}
+              alt="Portrait of Quan"
               className="relative rounded-3xl shadow-2xl w-full h-[450px] object-cover object-center"
             />
 
