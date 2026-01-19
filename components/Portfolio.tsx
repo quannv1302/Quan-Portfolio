@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 import { PROJECTS, CATEGORIES } from '../constants';
 import { ProjectCategory } from '../types';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Layers } from 'lucide-react';
+import { ArrowRight, Layers, Search } from 'lucide-react';
 import LazyImage from './LazyImage';
 
 const Portfolio: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<'Tất cả' | ProjectCategory>('Tất cả');
+  const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
-  const filteredProjects = activeCategory === 'Tất cả'
-    ? PROJECTS
-    : PROJECTS.filter(project => project.category === activeCategory);
+  const filteredProjects = PROJECTS.filter(project => {
+    const matchesCategory = activeCategory === 'Tất cả' || project.category === activeCategory;
+    const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.shortDescription.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.technologies.some(tech => tech.toLowerCase().includes(searchQuery.toLowerCase()));
+    return matchesCategory && matchesSearch;
+  });
 
   const handleProjectClick = (id: string) => {
     navigate(`/project/${id}`);
@@ -22,12 +27,26 @@ const Portfolio: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-4">
           <h2 className="text-indigo-600 font-semibold tracking-wide uppercase text-sm mb-2">Portfolio</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Danh sách các dự án đã thực hiện</h3>
-          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
+          <p className="mt-2 text-slate-600 max-w-2xl mx-auto">
             Dưới đây là một số dự án tiêu biểu tôi đã thực hiện trong suốt gần 4 năm qua với các lĩnh vực khác nhau, từ Logistics, Giáo dục đến Quản lý doanh nghiệp.
           </p>
+        </div>
+
+        {/* Search Bar */}
+        <div className="flex justify-center mb-8">
+          <div className="relative w-full max-w-2xl">
+            <input
+              type="text"
+              placeholder="Tìm kiếm dự án..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-4 py-2.5 rounded-full border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 bg-white text-slate-700 shadow-sm"
+            />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-5 h-5" />
+          </div>
         </div>
 
         {/* Filters */}

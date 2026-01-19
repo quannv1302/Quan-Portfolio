@@ -88,7 +88,7 @@ const ProjectDetail: React.FC = () => {
               <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-lg text-sm font-semibold">
                 {project.category}
               </span>
-              <span className="text-slate-400 text-sm">ID: #{project.id}</span>
+              {/* <span className="text-slate-400 text-sm">ID: #{project.id}</span> */}
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">{project.title}</h1>
             <p className="text-xl text-slate-600 leading-relaxed max-w-4xl">
@@ -98,7 +98,7 @@ const ProjectDetail: React.FC = () => {
 
           {/* Meta Data Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 border-y border-slate-100 mb-12">
-            <div>
+            {/* <div>
               <div className="flex items-center text-slate-400 mb-2 text-sm font-medium">
                 <Calendar className="w-4 h-4 mr-2" /> Thời gian
               </div>
@@ -109,10 +109,10 @@ const ProjectDetail: React.FC = () => {
                 <User className="w-4 h-4 mr-2" /> Khách hàng
               </div>
               <div className="text-slate-900 font-semibold">{project.client}</div>
-            </div>
+            </div> */}
             <div className="col-span-2 md:col-span-2">
               <div className="flex items-center text-slate-400 mb-2 text-sm font-medium">
-                <Layers className="w-4 h-4 mr-2" /> Công nghệ / Tools
+                <Layers className="w-4 h-4 mr-2" /> Công nghệ / Tools sử dụng
               </div>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map(tech => (
@@ -137,10 +137,11 @@ const ProjectDetail: React.FC = () => {
               <div className="bg-indigo-50 p-6 rounded-2xl">
                 <h4 className="text-indigo-900 font-bold mb-2">Vai trò của tôi</h4>
                 <ul className="list-disc list-inside text-indigo-800/80 space-y-1 text-sm">
-                  <li>Phân tích yêu cầu người dùng</li>
-                  <li>Xây dựng Wireframe & User Flow</li>
-                  <li>Thiết kế UI High-fidelity</li>
-                  <li>Tạo Prototype tương tác</li>
+                  {project.roles.map(role => (
+                    <li key={role} className="">
+                      {role}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

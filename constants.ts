@@ -18,7 +18,6 @@ export const SKILLS: Skill[] = [
   { name: "Prototyping", level: 92 },
   { name: "Design System", level: 88 },
   { name: "HTML/CSS Basic", level: 70 },
-  { name: "AI Prompting", level: 90 },
 ];
 
 export const PROJECTS: Project[] = [
@@ -28,6 +27,13 @@ export const PROJECTS: Project[] = [
     category: "Logistics",
     thumbnail: "https://picsum.photos/id/20/800/600",
     shortDescription: "Nền tảng quản lý đội xe và tối ưu hóa lộ trình giao hàng thời gian thực.",
+    roles: [
+      "Kết hợp với BA để phân tích dự án",
+      "Thiết kế wireframe dự vào tài liệu của BA",
+      "Thiết kế UI cho sản phẩm",
+      "Chuẩn hoá lại UI và bàn giao cho DEV",
+      "Chỉnh sửa UI theo yêu cầu"
+    ],
     fullDescription: "LogiTrack là một giải pháp SaaS toàn diện giúp các doanh nghiệp vận tải quản lý đội xe của họ. Dự án tập trung vào việc hiển thị bản đồ trực quan, bảng điều khiển (dashboard) phức tạp nhưng dễ hiểu để theo dõi trạng thái đơn hàng. Tôi chịu trách nhiệm chính về UX Research và UI Design cho cả Web App và Mobile App tài xế.",
     technologies: ["Figma", "illustrator"],
     screens: [
@@ -45,9 +51,16 @@ export const PROJECTS: Project[] = [
   {
     id: "2",
     title: "EduLearn LMS",
-    category: "Giáo dục",
+    category: "Logistics",
     thumbnail: "https://picsum.photos/id/24/800/600",
     shortDescription: "Hệ thống quản lý học tập trực tuyến dành cho các trường trung học.",
+    roles: [
+      "Kết hợp với BA để phân tích dự án",
+      "Thiết kế wireframe dự vào tài liệu của BA",
+      "Thiết kế UI cho sản phẩm",
+      "Chuẩn hoá lại UI và bàn giao cho DEV",
+      "Chỉnh sửa UI theo yêu cầu"
+    ],
     fullDescription: "EduLearn tập trung vào trải nghiệm học tập gamification để tăng sự hứng thú cho học sinh. Giao diện được thiết kế tươi sáng, thân thiện và dễ điều hướng. Các tính năng bao gồm lớp học ảo, nộp bài tập, và theo dõi tiến độ học tập.",
     technologies: ["Adobe XD", "User Flow", "Wireframing"],
     screens: [
@@ -64,6 +77,13 @@ export const PROJECTS: Project[] = [
     category: "Landing page",
     thumbnail: "https://picsum.photos/id/28/800/600",
     shortDescription: "Trang giới thiệu sản phẩm organic với tỷ lệ chuyển đổi cao.",
+    roles: [
+      "Kết hợp với BA để phân tích dự án",
+      "Thiết kế wireframe dự vào tài liệu của BA",
+      "Thiết kế UI cho sản phẩm",
+      "Chuẩn hoá lại UI và bàn giao cho DEV",
+      "Chỉnh sửa UI theo yêu cầu"
+    ],
     fullDescription: "Thiết kế Landing page cho chiến dịch ra mắt dòng sản phẩm mới của GreenLife. Mục tiêu là kể câu chuyện thương hiệu thông qua hình ảnh chất lượng cao và typography hiện đại, dẫn dắt người dùng đến hành động mua hàng.",
     technologies: ["Figma", "Landing Page Design", "Typography"],
     screens: [
@@ -84,6 +104,13 @@ export const PROJECTS: Project[] = [
     category: "Quản lý công ty",
     thumbnail: "https://picsum.photos/id/48/800/600",
     shortDescription: "Phần mềm quản lý nhân sự, chấm công và tính lương tự động.",
+    roles: [
+      "Kết hợp với BA để phân tích dự án",
+      "Thiết kế wireframe dự vào tài liệu của BA",
+      "Thiết kế UI cho sản phẩm",
+      "Chuẩn hoá lại UI và bàn giao cho DEV",
+      "Chỉnh sửa UI theo yêu cầu"
+    ],
     fullDescription: "HRM Pro giải quyết bài toán phức tạp về quản lý dữ liệu nhân sự lớn. Thách thức lớn nhất là thiết kế các bảng dữ liệu (data tables) phức tạp sao cho dễ nhìn và dễ thao tác trên nhiều kích thước màn hình.",
     technologies: ["Figma", "Design System", "Component Library"],
     screens: [
@@ -99,6 +126,13 @@ export const PROJECTS: Project[] = [
     category: "Logistics",
     thumbnail: "https://picsum.photos/id/56/800/600",
     shortDescription: "Bảng điều khiển theo dõi đơn hàng quốc tế.",
+    roles: [
+      "Kết hợp với BA để phân tích dự án",
+      "Thiết kế wireframe dự vào tài liệu của BA",
+      "Thiết kế UI cho sản phẩm",
+      "Chuẩn hoá lại UI và bàn giao cho DEV",
+      "Chỉnh sửa UI theo yêu cầu"
+    ],
     fullDescription: "Dự án redesign lại hệ thống tracking cũ kỹ. Tập trung vào việc visualize dữ liệu (Data Visualization) giúp các manager đưa ra quyết định nhanh chóng.",
     technologies: ["Sketch", "Data Viz", "Dashboard UI"],
     screens: [
@@ -114,6 +148,36 @@ export const PROJECTS: Project[] = [
     category: "Giáo dục",
     thumbnail: "https://picsum.photos/id/60/800/600",
     shortDescription: "Ứng dụng học tiếng Anh cho trẻ em 3-6 tuổi.",
+    roles: [
+      "Kết hợp với BA để phân tích dự án",
+      "Thiết kế wireframe dự vào tài liệu của BA",
+      "Thiết kế UI cho sản phẩm",
+      "Chuẩn hoá lại UI và bàn giao cho DEV",
+      "Chỉnh sửa UI theo yêu cầu"
+    ],
+    fullDescription: "Ứng dụng mobile với nhiều màu sắc, nhân vật hoạt hình và tương tác chạm vuốt đơn giản phù hợp với trẻ nhỏ. UX được tối ưu cho người dùng không biết đọc.",
+    technologies: ["Figma", "Mobile Design", "Illustration"],
+    screens: [
+      "https://picsum.photos/id/600/800/600",
+      "https://picsum.photos/id/611/800/600"
+    ],
+    date: "05/2023 - 07/2023",
+    client: "Kids Edu"
+  },
+  {
+    id: "7",
+    title: "App vừa tạo",
+    category: "Giáo dục",
+    thumbnail: "https://picsum.photos/id/60/800/600",
+    shortDescription: "Ứng dụng học tiếng Anh cho trẻ em 3-6 tuổi.",
+    roles: [
+      "Kết hợp với BA để phân tích dự án",
+      "Thiết kế wireframe dự vào tài liệu của BA",
+      "Thiết kế UI cho sản phẩm",
+      "Chuẩn hoá lại UI và bàn giao cho DEV",
+      "Chỉnh sửa UI theo yêu cầu",
+
+    ],
     fullDescription: "Ứng dụng mobile với nhiều màu sắc, nhân vật hoạt hình và tương tác chạm vuốt đơn giản phù hợp với trẻ nhỏ. UX được tối ưu cho người dùng không biết đọc.",
     technologies: ["Figma", "Mobile Design", "Illustration"],
     screens: [
@@ -123,6 +187,7 @@ export const PROJECTS: Project[] = [
     date: "05/2023 - 07/2023",
     client: "Kids Edu"
   }
+
 ];
 
 export const CATEGORIES: ('Tất cả' | ProjectCategory)[] = [

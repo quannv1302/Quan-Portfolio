@@ -11,6 +11,7 @@ export interface Project {
   screens: string[];
   date: string;
   client: string;
+  roles: string[];
 }
 
 export interface Skill {
