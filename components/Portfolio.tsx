@@ -29,9 +29,9 @@ const Portfolio: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-8">
           <h2 className="text-indigo-600 font-semibold tracking-wide uppercase text-sm mb-4">Portfolio</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Danh sách các dự án đã thực hiện</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Danh sách dự án đã thực hiện</h3>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-            Dưới đây là một số dự án tiêu biểu tôi đã thực hiện trong suốt gần 4 năm qua với các lĩnh vực khác nhau, từ Logistics, Giáo dục đến Quản lý doanh nghiệp.
+            Dưới đây là một số dự án tiêu biểu tôi đã thực hiện trong suốt gần 4 năm qua với các lĩnh vực khác nhau, như Logistics, Giáo dục và Quản lý nội bộ doanh nghiệp.
           </p>
         </div>
 

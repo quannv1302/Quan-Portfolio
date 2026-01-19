@@ -25,7 +25,7 @@ const App: React.FC = () => {
   // For this simple portfolio, Navbar stays everywhere.
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 pb-20 md:pb-0">
       <Navbar />
       <main>
         <Routes>

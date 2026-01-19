@@ -22,7 +22,7 @@ const About: React.FC = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
                 <span className="text-indigo-600">Nguyễn Văn Quân</span>
               </h1>
-              <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">
+              <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg font-light">
                 Tôi là một UI/UX Designer đam mê tạo ra những trải nghiệm kỹ thuật số trực quan, hấp dẫn và lấy người dùng làm trung tâm. Với 3 năm kinh nghiệm, tôi biến những ý tưởng phức tạp thành các thiết kế đơn giản và hiệu quả.
               </p>
             </div>
@@ -65,7 +65,7 @@ const About: React.FC = () => {
           <div className="relative max-w-md mx-auto">
             <div className="absolute inset-0 bg-indigo-600 rounded-3xl rotate-3 opacity-10"></div>
             <img
-              src={images.avt2}
+              src={images.avt3}
               alt="Portrait of Quan"
               className="relative rounded-3xl shadow-2xl w-full h-[450px] object-cover object-center"
             />

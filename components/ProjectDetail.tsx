@@ -71,10 +71,23 @@ const ProjectDetail: React.FC = () => {
       <div className="bg-white min-h-screen pt-24 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Back Button */}
+          {/* Fixed Mobile Header */}
+          <div className="fixed top-0 left-0 w-full bg-white z-40 shadow-sm px-4 py-3 flex items-center md:hidden transition-transform">
+            <button
+              onClick={() => navigate('/')}
+              className="group flex items-center text-slate-500 hover:text-indigo-600 transition-colors"
+            >
+              <div className="p-2 rounded-full bg-slate-100 group-hover:bg-indigo-50 mr-3 transition-colors">
+                <ArrowLeft className="w-5 h-5" />
+              </div>
+              <span className="font-bold text-slate-700 text-lg">Quay lại danh sách</span>
+            </button>
+          </div>
+
+          {/* Back Button (Desktop) */}
           <button
             onClick={() => navigate('/')}
-            className="group flex items-center text-slate-500 hover:text-indigo-600 mb-8 transition-colors"
+            className="group hidden md:flex items-center text-slate-500 hover:text-indigo-600 mb-8 transition-colors"
           >
             <div className="p-2 rounded-full bg-slate-100 group-hover:bg-indigo-50 mr-3 transition-colors">
               <ArrowLeft className="w-5 h-5" />
