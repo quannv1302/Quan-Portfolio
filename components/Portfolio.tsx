@@ -23,20 +23,20 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <section id="portfolio" className="py-24 bg-white">
+    <section id="portfolio" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center mb-4">
-          <h2 className="text-indigo-600 font-semibold tracking-wide uppercase text-sm mb-2">Portfolio</h2>
+        <div className="text-center mb-8">
+          <h2 className="text-indigo-600 font-semibold tracking-wide uppercase text-sm mb-4">Portfolio</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-slate-900">Danh sách các dự án đã thực hiện</h3>
-          <p className="mt-2 text-slate-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
             Dưới đây là một số dự án tiêu biểu tôi đã thực hiện trong suốt gần 4 năm qua với các lĩnh vực khác nhau, từ Logistics, Giáo dục đến Quản lý doanh nghiệp.
           </p>
         </div>
 
         {/* Search Bar */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-4">
           <div className="relative w-full max-w-2xl">
             <input
               type="text"

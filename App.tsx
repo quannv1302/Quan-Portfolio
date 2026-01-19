@@ -5,6 +5,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import ProjectDetail from './components/ProjectDetail';
+import CV from './components/CV';
 
 const HomePage: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const App: React.FC = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/cv" element={<CV />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
       </main>

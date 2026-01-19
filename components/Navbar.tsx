@@ -16,8 +16,15 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNav = (id: string) => {
+  const handleNav = (id: string, isPage: boolean = false) => {
     setIsOpen(false);
+    if (isPage) {
+      if (id === 'cv') {
+        navigate('/cv');
+      }
+      return;
+    }
+
     if (location.pathname !== '/') {
       navigate('/');
       setTimeout(() => {
@@ -29,9 +36,10 @@ const Navbar: React.FC = () => {
   };
 
   const navLinks = [
-    { name: 'Giới thiệu', id: 'about' },
-    { name: 'Danh sách dự án', id: 'portfolio' },
-    { name: 'Liên hệ', id: 'contact' },
+    { name: 'Giới thiệu', id: 'about', isPage: false },
+    { name: 'Danh sách dự án', id: 'portfolio', isPage: false },
+    { name: 'Liên hệ', id: 'contact', isPage: false },
+    { name: 'CV', id: 'cv', isPage: true },
   ];
 
   return (
@@ -50,7 +58,7 @@ const Navbar: React.FC = () => {
             {navLinks.map((link) => (
               <button
                 key={link.name}
-                onClick={() => handleNav(link.id)}
+                onClick={() => handleNav(link.id, link.isPage)}
                 className="text-slate-600 hover:text-indigo-600 font-medium transition-colors"
               >
                 {link.name}
@@ -74,7 +82,7 @@ const Navbar: React.FC = () => {
             {navLinks.map((link) => (
               <button
                 key={link.name}
-                onClick={() => handleNav(link.id)}
+                onClick={() => handleNav(link.id, link.isPage)}
                 className="text-left text-slate-600 hover:text-indigo-600 font-medium py-2"
               >
                 {link.name}
