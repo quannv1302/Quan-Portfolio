@@ -3,6 +3,21 @@ import { Download, FileText } from 'lucide-react';
 import { pdfs } from "@/assets/pdfMap";
 const cvPdf = pdfs["CV-Nguyen-Van-Quan-UI-UX-Designer"];
 
+const handleDownload = async () => {
+    const res = await fetch(cvPdf);
+    const blob = await res.blob();
+
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+
+    a.href = url;
+    a.download = "Nguyen-Van-Quan-CV-UI-UX-Designer.pdf";
+    document.body.appendChild(a);
+    a.click();
+
+    a.remove();
+    window.URL.revokeObjectURL(url);
+};
 
 
 const CV: React.FC = () => {
@@ -16,8 +31,10 @@ const CV: React.FC = () => {
                         <h1 className="text-3xl font-bold text-white mb-2">CV của tôi</h1>
                     </div>
                     <div className="mt-6 sm:mt-0">
-                        <button className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors shadow-lg shadow-indigo-600/20">
-                            <Download className="w-5 h-5 mr-2" />
+                        <button
+                            onClick={handleDownload}
+                            className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg"
+                        >
                             Download PDF
                         </button>
                     </div>
