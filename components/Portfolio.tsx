@@ -3,6 +3,7 @@ import { PROJECTS, CATEGORIES } from '../constants';
 import { ProjectCategory } from '../types';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Layers } from 'lucide-react';
+import LazyImage from './LazyImage';
 
 const Portfolio: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<'Tất cả' | ProjectCategory>('Tất cả');
@@ -55,10 +56,11 @@ const Portfolio: React.FC = () => {
             >
               {/* Thumbnail */}
               <div className="relative aspect-video overflow-hidden bg-slate-200">
-                <img
+                <LazyImage
                   src={project.thumbnail}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  containerClassName="w-full h-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <span className="text-white font-medium flex items-center">

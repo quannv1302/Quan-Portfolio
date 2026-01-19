@@ -1,6 +1,6 @@
 import React from 'react';
 import { SKILLS } from '../constants';
-import { Calendar, Mail, MapPin, Briefcase, BriefcaseBusinessIcon, FolderArchiveIcon, FolderDotIcon, FolderOpenDotIcon } from 'lucide-react';
+import { Calendar, Mail, MapPin, Briefcase, BriefcaseBusinessIcon, FolderArchiveIcon, FolderDotIcon, FolderOpenDotIcon, FolderOpenIcon } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -14,8 +14,10 @@ const About: React.FC = () => {
               <span className="inline-block px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 font-medium text-sm mb-4">
                 UI/UX Designer
               </span>
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 leading-tight mb-2">
+                Hello, I am
+              </h1>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                Xin chào, tôi là <br />
                 <span className="text-indigo-600">Nguyễn Văn Quân</span>
               </h1>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">
@@ -58,19 +60,19 @@ const About: React.FC = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative max-w-md mx-auto">
             <div className="absolute inset-0 bg-indigo-600 rounded-3xl rotate-3 opacity-10"></div>
             <img
-              src="https://picsum.photos/id/64/800/1000"
+              src="./public/images/avt2.jpeg"
               alt="Portrait of Minh"
-              className="relative rounded-3xl shadow-2xl w-full h-[600px] object-cover object-center"
+              className="relative rounded-3xl shadow-2xl w-full h-[450px] object-cover object-center"
             />
 
             {/* Floating Card Experience */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block">
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-indigo-100 rounded-full text-indigo-600">
-                  <FolderOpenDotIcon size={24} />
+                  <FolderOpenIcon size={24} />
                 </div>
                 <div>
                   <p className="text-2xl font-bold text-slate-900">40+</p>

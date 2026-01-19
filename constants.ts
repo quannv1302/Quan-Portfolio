@@ -29,11 +29,15 @@ export const PROJECTS: Project[] = [
     thumbnail: "https://picsum.photos/id/20/800/600",
     shortDescription: "Nền tảng quản lý đội xe và tối ưu hóa lộ trình giao hàng thời gian thực.",
     fullDescription: "LogiTrack là một giải pháp SaaS toàn diện giúp các doanh nghiệp vận tải quản lý đội xe của họ. Dự án tập trung vào việc hiển thị bản đồ trực quan, bảng điều khiển (dashboard) phức tạp nhưng dễ hiểu để theo dõi trạng thái đơn hàng. Tôi chịu trách nhiệm chính về UX Research và UI Design cho cả Web App và Mobile App tài xế.",
-    technologies: ["Figma", "Auto Layout", "Google Maps Style"],
+    technologies: ["Figma", "illustrator"],
     screens: [
       "https://picsum.photos/id/119/800/600",
       "https://picsum.photos/id/160/800/600",
-      "https://picsum.photos/id/180/800/600"
+      "https://picsum.photos/id/180/800/600",
+      "https://picsum.photos/id/190/800/600",
+      "https://picsum.photos/id/200/800/600",
+      "https://picsum.photos/id/210/800/600",
+      "https://picsum.photos/id/220/800/600",
     ],
     date: "01/2023 - 06/2023",
     client: "LogiVina Corp"
@@ -64,7 +68,12 @@ export const PROJECTS: Project[] = [
     technologies: ["Figma", "Landing Page Design", "Typography"],
     screens: [
       "https://picsum.photos/id/301/800/600",
-      "https://picsum.photos/id/319/800/600"
+      "https://picsum.photos/id/319/800/600",
+      "https://picsum.photos/id/319/800/600",
+      "https://picsum.photos/id/319/800/600",
+      "https://picsum.photos/id/319/800/600",
+      "https://picsum.photos/id/319/800/600",
+      "https://picsum.photos/id/319/800/600",
     ],
     date: "01/2024 - 02/2024",
     client: "GreenLife Vietnam"

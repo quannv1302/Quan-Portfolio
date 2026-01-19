@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                   rel="noopener noreferrer"
                   className="p-3 bg-white/5 rounded-full hover:bg-indigo-600 transition-colors"
                 >
-                  <FaFacebook className="w-5 h-5" />
+                  <FaFacebook {...({ className: "w-5 h-5" } as any)} />
                 </a>
                 <a
                   href="https://www.facebook.com/quanvanng"
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
                   rel="noopener noreferrer"
                   className="p-3 bg-white/5 rounded-full hover:bg-indigo-600 transition-colors"
                 >
-                  <FaBehance className="w-5 h-5" />
+                  <FaBehance {...({ className: "w-5 h-5" } as any)} />
                 </a>
               </div>
             </div>

@@ -32,10 +32,10 @@ const App: React.FC = () => {
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
       </main>
-      
+
       {/* Simple Footer */}
       <footer className="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
-        <p>© 2024 Minh UI/UX Designer. All rights reserved.</p>
+        <p>© 2026 Quan UI/UX Designer. All rights reserved.</p>
       </footer>
     </div>
   );
