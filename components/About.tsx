@@ -1,6 +1,6 @@
 import React from 'react';
 import { SKILLS } from '../constants';
-import { Calendar, Mail, MapPin, Briefcase, BriefcaseBusinessIcon, FolderArchiveIcon, FolderDotIcon, FolderOpenDotIcon, FolderOpenIcon } from 'lucide-react';
+import { Calendar, Mail, MapPin, Phone, Briefcase, BriefcaseBusinessIcon, FolderArchiveIcon, FolderDotIcon, FolderOpenDotIcon, FolderOpenIcon } from 'lucide-react';
 import { images } from '@/assets/imageMap';
 
 
@@ -23,22 +23,27 @@ const About: React.FC = () => {
                 <span className="text-indigo-600">Nguyễn Văn Quân</span>
               </h1>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg font-light">
-                Tôi là một UI/UX Designer đam mê tạo ra những trải nghiệm kỹ thuật số trực quan, hấp dẫn và lấy người dùng làm trung tâm. Với 3 năm kinh nghiệm, tôi biến những ý tưởng phức tạp thành các thiết kế đơn giản và hiệu quả.
+                Tôi là một UI/UX Designer đam mê tạo ra những trải nghiệm kỹ thuật số trực quan,
+                hấp dẫn và lấy người dùng làm trung tâm. Với{" "}
+                <span className="font-semibold text-pink-600">
+                  hơn 3 năm kinh nghiệm
+                </span>
+                , tôi biến những ý tưởng phức tạp thành các thiết kế đơn giản và hiệu quả.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-center space-x-3 text-slate-700">
                 <Calendar className="w-5 h-5 text-indigo-500" />
-                <span>13/03/2000</span>
+                <span>13/03/2000 (26 tuổi)</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-700">
                 <MapPin className="w-5 h-5 text-indigo-500" />
                 <span>Hà Nội, Việt Nam</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-700">
-                <Briefcase className="w-5 h-5 text-indigo-500" />
-                <span>3+ năm kinh nghiệm</span>
+                <Phone className="w-5 h-5 text-indigo-500" />
+                <span>0977.290.289</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-700">
                 <Mail className="w-5 h-5 text-indigo-500" />
@@ -71,7 +76,7 @@ const About: React.FC = () => {
             />
 
             {/* Floating Card Experience */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block">
+            <div className="absolute -bottom-6 left-0 md:-left-6 bg-white p-5 rounded-2xl shadow-xl max-w-xs">
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-indigo-100 rounded-full text-indigo-600">
                   <FolderOpenIcon size={24} />
@@ -82,6 +87,20 @@ const About: React.FC = () => {
                 </div>
               </div>
             </div>
+            <div className="absolute -top-6 right-0 md:-right-6 bg-white p-5 rounded-2xl
+                shadow-[0_8px_24px_rgba(0,0,0,0.20)]
+                max-w-xs">
+              <div className="flex items-center space-x-4">
+                <div className="p-3 bg-pink-100 rounded-full text-pink-600">
+                  <BriefcaseBusinessIcon size={24} />
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-slate-900">3+</p>
+                  <p className="text-slate-500 text-sm">Năm kinh nghiệm</p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>

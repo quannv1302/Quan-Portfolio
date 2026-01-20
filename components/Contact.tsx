@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
             </div>
             <h4 className="text-lg font-semibold mb-2">Địa chỉ</h4>
             <span className="text-slate-300 group-hover:text-white transition-colors text-center">
-              Cầu Giấy, Hà Nội, Việt Nam
+              Hà Nội, Việt Nam
             </span>
           </div>
         </div>
@@ -68,23 +68,29 @@ const Contact: React.FC = () => {
           <h4 className="text-sm font-semibold text-slate-400 uppercase mb-6 tracking-wider">Kết nối trên mạng xã hội</h4>
           <div className="flex space-x-6">
             <a
-              href="#"
+              href="https://www.facebook.com/quanvanng"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-4 bg-white/5 rounded-full hover:bg-[#0077b5] hover:text-white text-slate-400 transition-all duration-300 transform hover:-translate-y-1"
-              aria-label="LinkedIn"
+              aria-label="Facebook"
             >
               <Facebook className="w-6 h-6" />
             </a>
             <a
               href="#"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-4 bg-white/5 rounded-full hover:bg-[#ea4c89] hover:text-white text-slate-400 transition-all duration-300 transform hover:-translate-y-1"
               aria-label="Dribbble"
             >
               <Dribbble className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.behance.net/quandesign"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-4 bg-white/5 rounded-full hover:bg-[#333] hover:text-white text-slate-400 transition-all duration-300 transform hover:-translate-y-1"
-              aria-label="GitHub"
+              aria-label="Behance"
             >
               <FaBehance size={24} />
             </a>
