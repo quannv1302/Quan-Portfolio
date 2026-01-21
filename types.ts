@@ -1,4 +1,4 @@
-export type ProjectCategory = 'Tất cả' | 'Logistics' | 'Giáo dục' | 'Landing page' | 'Quản lý công ty';
+export type ProjectCategory = 'Tất cả' | 'Logistics' | 'Giáo dục' | 'Landing page' | 'Quản lý công ty' | 'Demo';
 
 export interface Project {
   id: string;
